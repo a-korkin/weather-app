@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Ubuntu Light";
+    src: url("../../assets/fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu Regular";
+    src: url("../../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 65.5%;
+    background-image: linear-gradient(to right bottom, #E077C2, #5A5FF5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Ubuntu Light", sans-serif;
+}
+
+.container {
+    color: #fff;
+    background-color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 40rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+}

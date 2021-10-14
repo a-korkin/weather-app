@@ -1,0 +1,17 @@
+.top {
+    background-image: url("../../assets/img/night.jpg");
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    grid-row: 1 / span 1;
+    height: 15rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .place {
+        grid-column: 3 / -1;
+        justify-self: end;
+        padding: 1rem;
+    }
+}
