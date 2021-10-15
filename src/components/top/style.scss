@@ -1,0 +1,40 @@
+.top {
+    background-image: linear-gradient(rgba(#000, .2), rgba(#000, .2)), url("../../assets/img/night.jpg");
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    grid-row: 1 / span 1;
+    height: 15rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info {
+    justify-self: center;
+    text-align: center;
+    align-self: end;
+    padding: 3rem;
+
+    &__degrees {
+        font-size: 4rem;
+    }
+
+    &__desc {
+        font-family: "Ubuntu Light", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__addition {
+        font-size: .7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.place {
+    grid-column: 3 / -1;
+    justify-self: end;
+    padding: 1rem;
+}

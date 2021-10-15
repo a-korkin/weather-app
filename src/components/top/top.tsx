@@ -1,10 +1,18 @@
 import React from "react";
-import styles from "./top.module.scss";
+import "./style.scss";
 
 const Top = () => {
     return(
-        <div className={styles.top}>
-            <div className={styles.place}>Cheboksary</div>
+        <div className="top">
+            <div className="info">
+                <div className="info__degrees">12&#176;</div>
+                <div className="info__desc">Clouds</div>
+                <div className="info__addition">
+                    <div className="info__addition-item">humidity:<br />64%</div>
+                    <div className="info__addition-item">wind:<br />12 k/m</div>
+                </div>
+            </div>
+            <div className="place">Cheboksary</div>
         </div>
     );
 }
