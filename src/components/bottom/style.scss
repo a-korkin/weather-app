@@ -1,6 +1,9 @@
 .bottom {
+    font-family: "Ubuntu Regular", sans-serif;
     font-size: .9rem;
-    color: #3700B3;
+    // background-image: linear-gradient(to left top, #e8e8e4, #d8e2dc);
+    background-color: #fff;
+    color: #3d405b;
     padding: 3rem;
     text-transform: uppercase;
     display: grid;
@@ -16,7 +19,8 @@
     }
 
     &__selecter > select {
-        font-family: "Ubuntu Regular", sans-serif;
+        font-family: "Ubuntu Light", sans-serif;
+        color: inherit;
         width: 15rem;
         padding: .8rem;
         outline: none;

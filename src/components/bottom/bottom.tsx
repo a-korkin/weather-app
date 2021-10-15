@@ -2,10 +2,8 @@ import React, { FC } from "react";
 import "./style.scss";
 
 const Bottom: FC = () => {
-    // console.log(ticksToDate(1634308213 * 1000));
     const sunrise = new Date(1634270404 * 1000);
     const sunset = new Date(1634308213 * 1000);
-    console.log(`sunrise: ${sunrise.toLocaleTimeString("ru-RU")}, sunset: ${sunset}`);
     
     return (
         <div className="bottom">
