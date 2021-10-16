@@ -18,11 +18,23 @@
         }
     }
 
-    &__selecter > select {
+    &__selecter .select {
         font-family: "Ubuntu Light", sans-serif;
         color: inherit;
         width: 15rem;
-        padding: .8rem;
+        padding: .7rem;
         outline: none;
+        appearance: none;
+
+        // &:before {
+        //     content: "";
+        //     background-image: url(../../assets/img/angle-down-solid.svg);
+        //     fill: #000;
+        //     position: absolute;
+        //     width: 100rem;
+        //     height: 100rem;
+        //     top: 0;
+        //     right: 3rem;
+        // }
     }
 }

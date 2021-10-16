@@ -16,6 +16,12 @@ const Bottom: FC<IBottomProps> = ({ sunrise, sunset, temp_min, temp_max, onChang
     const changeHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
         onChangeSelect(event.target.value);
     }
+
+    const cities = [
+        "moscow", "minsk", "berlin",
+        "london", "paris", "rome", 
+        "istanbul", "madrid", "saint petersburg"
+    ];
     
     return (
         <div className="bottom">
@@ -26,11 +32,12 @@ const Bottom: FC<IBottomProps> = ({ sunrise, sunset, temp_min, temp_max, onChang
                 <div className="bottom__info__item">MAX: {temp_max}&#176;</div>
             </div>
             <div className="bottom__selecter">
-                <select name="city" id="city" onChange={e => changeHandler(e)}>
-                    <option value="moscow">Moscow</option>
-                    <option value="berlin">Berlin</option>
-                    <option value="london">London</option>
-                    <option value="paris">Paris</option>
+                <select className="select" name="city" id="city" onChange={e => changeHandler(e)}>
+                    {
+                        cities.map((city) => (
+                            <option key={city} value={city}>{city.toUpperCase()}</option>
+                        ))
+                    }
                 </select>
             </div>
         </div>
